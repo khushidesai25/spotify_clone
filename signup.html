@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Clone - Sign Up</title>
+  <link rel="stylesheet" href="signupstyles.css">
+</head>
+<body>
+  <div class="signup-container">
+    <div class="signup-box">
+      <div class="logo">
+        <img src="spotify-logo.png" alt="Spotify Logo">
+      </div>
+      <h2>Sign Up for Free to Start Listening</h2>
+      <form action="#" method="POST">
+        <!-- Email Input -->
+        <div class="input-group">
+          <label for="email">What's your email?</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        
+        <!-- Password Input -->
+        <div class="input-group">
+          <label for="password">Create a password</label>
+          <input type="password" id="password" name="password" placeholder="Create a password" required>
+        </div>
+
+        <!-- Username Input -->
+        <div class="input-group">
+          <label for="username">What should we call you?</label>
+          <input type="text" id="username" name="username" placeholder="Enter a profile name" required>
+        </div>
+
+        <!-- Date of Birth -->
+        <div class="input-group">
+          <label for="dob">What's your date of birth?</label>
+          <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <!-- Gender Input -->
+        <div class="input-group">
+          <label>What's your gender?</label>
+          <div class="gender-options">
+            <label for="male">
+              <input type="radio" id="male" name="gender" value="male" required> Male
+            </label>
+            <label for="female">
+              <input type="radio" id="female" name="gender" value="female" required> Female
+            </label>
+            <label for="non-binary">
+              <input type="radio" id="non-binary" name="gender" value="non-binary" required> Non-binary
+            </label>
+          </div>
+        </div>
+
+        <!-- Terms and Conditions -->
+        <div class="terms">
+          <input type="checkbox" id="terms" name="terms" required>
+          <label for="terms">I agree to the <a href="#">Terms and Conditions</a></label>
+        </div>
+
+        <!-- Sign Up Button -->
+        <button type="submit" class="signup-btn">Sign Up</button>
+
+        <!-- Login Option -->
+        <p class="login-text">Already have an account? <a href="#">Log in</a></p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

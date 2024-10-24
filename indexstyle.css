@@ -1,0 +1,202 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    height: 100vh;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #b3b3b3;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #1db954;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 250px;
+    background-color: #000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .sidebar  img {
+    width: 100px;
+    margin-bottom: 30px;
+    height: 50px;
+
+  }
+  .logo img{
+    width: 70px;;
+   border-radius: 35px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin-bottom: 20px;
+  }
+  
+  /* Hover effect for nav links */
+  .nav-links li:hover {
+    background-color: #282828;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  /* Main Content */
+  .main-content {
+    flex-grow: 1;
+    background-color: #181818;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .top-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #282828;
+    align-items: center;
+  }
+  
+  /* Styled Search Bar */
+  .search-bar {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    background-color: #404040;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-bar:focus {
+    background-color: #333333;
+  }
+  
+  .top-nav .user-profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .top-nav .user-profile img {
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  /* Buttons with hover and focus effect */
+  .nav-btn {
+    background-color: #1db954;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-btn:hover {
+    background-color: #14833b;
+  }
+  
+  .featured {
+    padding: 20px;
+  }
+  
+  .cards {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Card hover animation */
+  .card {
+    background-color: #282828;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 150px;
+
+
+    
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 120px;
+    margin-bottom: 10px;
+  }
+  
+  /* Music Player */
+  .music-player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #282828;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .music-player .song-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .music-player .song-info img {
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .music-player .song-details p {
+    margin: 0;
+  }
+  
+  /* Player buttons with hover and animation */
+  .player-btn {
+    margin: 0 10px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    transition: transform 0.2s ease, color 0.3s ease;
+  }
+  
+  .player-btn:hover {
+    transform: scale(1.2);
+    color: #1db954;
+  }
+  
+  /* Volume control with smooth transitions */
+  .volume-control input {
+    width: 100px;
+    transition: width 0.3s ease;
+  }
+  
+  .volume-control input:hover {
+    width: 120px;
+  }
+  
+  
